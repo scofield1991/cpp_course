@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1482933597 source:/home/oleksandr/CppProjects/FirstExample/main.cpp
+	<iostream>
+	<string>
+	<array>
+	<new>
+	<sstream>
+
+1482846598 source:/home/oleksandr/CppProjects/FirstExample/ex_1.cpp
+	<stdio.h>
+

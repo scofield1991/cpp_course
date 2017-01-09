@@ -1,0 +1,59 @@
+#ifndef STACK_INCLUDED
+#define STACK_INCLUDED
+
+#include <vector>
+#include <stdexcept>
+
+using namespace std;
+
+template <class T>
+class Stack;
+
+template <class T>
+Stack<T> operator+(const Stack<T> &a, const Stack<T> &b);
+
+template <class T>
+class Stack
+{
+    vector<T> my_stack;
+public:
+    bool empty() { return my_stack.size() == 0 ? true : false; };
+    void push(const T &item);
+    T &top();
+    void pop();
+    friend Stack operator+<>(const Stack &a, const Stack &b);
+};
+
+template <class T>
+void Stack<T>::push(const T &item)
+{
+    my_stack.push_back(item);
+}
+
+template <class T>
+T &Stack<T>::top()
+{
+    if (my_stack.size() == 0)
+        throw std::runtime_error("Stack is Empty!");
+    return my_stack.back();
+}
+
+template <class T>
+void Stack<T>::pop()
+{
+    my_stack.pop_back();
+}
+
+template <class T>
+Stack<T> operator+(const Stack<T> &a, const Stack<T> &b)
+{
+    Stack<T> temp;
+    temp.my_stack.reserve(a.my_stack.size() + b.my_stack.size());
+    temp.my_stack.insert(temp.my_stack.end(), a.my_stack.begin(),
+                         a.my_stack.end());
+    temp.my_stack.insert(temp.my_stack.end(), b.my_stack.begin(),
+                         b.my_stack.end());
+
+    return temp;
+}
+#endif // STACK_INCLUDED

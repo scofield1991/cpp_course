@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1483612031 source:/home/oleksandr/CppProjects/problem_set_4/main.cpp
+	<iostream>
+	"geometry.h"
+	<typeinfo>
+
+1483611305 /home/oleksandr/CppProjects/problem_set_4/geometry.h
+
+1483611225 source:/home/oleksandr/CppProjects/problem_set_4/geometry.cpp
+	<iostream>
+	<typeinfo>
+	<stdlib.h>
+	<math.h>
+	"geometry.h"
+

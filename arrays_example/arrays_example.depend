@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1483030512 source:/home/oleksandr/CppProjects/arrays_example/IntegerArray.cpp
+	<iostream>
+
+1483031111 source:/home/oleksandr/CppProjects/arrays_example/main.cpp
+	<iostream>
+	"IntegerArray.h"
+
+1483031099 /home/oleksandr/CppProjects/arrays_example/IntegerArray.h
+

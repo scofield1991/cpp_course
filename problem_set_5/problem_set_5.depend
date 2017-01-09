@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1483629555 source:/home/oleksandr/CppProjects/problem_set_5/main.cpp
+	<iostream>
+	"Stack"
+
+1483631966 /home/oleksandr/CppProjects/problem_set_5/Stack
+	<vector>
+	<stdexcept>
+

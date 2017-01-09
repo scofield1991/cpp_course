@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1483005455 source:/home/oleksandr/CppProjects/strings_example/main.cpp
+	<iostream>
+	<cstring>
+
